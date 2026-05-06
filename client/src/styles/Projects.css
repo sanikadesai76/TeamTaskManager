@@ -1,0 +1,96 @@
+.projects-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.projects-title {
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+
+/* PROJECT FORM */
+
+.project-form {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-bottom: 35px;
+}
+
+.project-form input,
+.project-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.project-form input:focus,
+.project-form textarea:focus {
+  border-color: #2563eb;
+}
+
+.project-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.project-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-form button:hover {
+  background: #1d4ed8;
+}
+
+
+/* PROJECT CARDS */
+
+.project-card {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  color: #111827;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
