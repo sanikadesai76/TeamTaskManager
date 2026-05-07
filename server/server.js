@@ -1,6 +1,6 @@
 const express = require("express");
-const dotenv = require("dotenv");
 const cors = require("cors");
+const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const projectRoutes = require("./routes/projectRoutes");
@@ -14,7 +14,12 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://team-task-manager-smoky-ten.vercel.app",
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Routes
