@@ -14,7 +14,7 @@ function Navbar() {
 
     localStorage.removeItem("user");
 
-    navigate("/login");
+    navigate("/");
   };
 
 
